@@ -1,0 +1,72 @@
+.dashboard{
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .dashboardEvents{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 50px auto;
+        text-align: center;
+        .events{
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            width: 85%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 15px;
+            color: white;
+        }
+    }
+    .newEvent{
+        background-color: #667eea;
+        text-align: center;
+        width: 30%;
+        margin: 0 50px;
+        border-radius: 10px;
+        padding: 20px 40px;
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 20px;
+        }
+    }
+
+    .ticket{
+        .ticketHeading{
+            text-align: center;
+            margin: 50px auto;
+        }
+        .eventTicketList{
+            .eventTicket{
+                // text-align: center;
+                width: 65%;
+                margin: 10px auto 50px;
+                border-radius: 20px;
+                padding: 30px;
+                box-shadow: 1px 3px 6px 4px rgba(0, 0, 0, 0.3);
+                display: grid;
+                grid-template-columns: auto auto;
+                margin: auto;
+                div{
+                    border: 1px solid black;
+                    width: 100%;
+                    .status{
+                        text-align: right;
+                        border: 1px solid black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.newEvent{
+    form{
+        display: grid;
+        width: 75%;
+        margin: 100px auto;
+    }
+}

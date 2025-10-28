@@ -1,0 +1,114 @@
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 40px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    // .mobile-screen .hero {
+    //         padding: 60px 20px;
+    //     }
+
+    .circle-deco {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+    }
+    
+    .circle-1 {
+        width: 300px;
+        height: 300px;
+        top: -150px;
+        right: -100px;
+    }
+    
+    // .mobile-screen .circle-1 {
+    //     width: 200px;
+    //     height: 200px;
+    //     top: -100px;
+    //     right: -50px;
+    // }
+    
+    h1 {
+        font-size: 48px;
+        margin-bottom: 16px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    // .mobile-screen .hero h1 {
+    //     font-size: 32px;
+    // }
+    
+    p {
+        font-size: 20px;
+        margin-bottom: 32px;
+        opacity: 0.95;
+    }
+    
+    // .mobile-screen .hero p {
+    //     font-size: 16px;
+    //     margin-bottom: 24px;
+    // }
+    
+    .cta-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+    }
+    
+    // .mobile-screen .cta-buttons {
+    //     flex-direction: column;
+    //     gap: 12px;
+    // }
+    
+    .btn-primary, .btn-secondary {
+        padding: 14px 32px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    
+    // .mobile-screen .btn-primary,
+    // .mobile-screen .btn-secondary {
+    //     padding: 12px 24px;
+    //     font-size: 14px;
+    // }
+    
+    .btn-primary {
+        background: white;
+        color: #667eea;
+        &:hover{
+            background-color: #ffffff33;
+            color: white;
+            border: 2px solid white;
+            transition: all .3s ease-in-out;
+        }
+    }
+    
+    .btn-secondary {
+        background: #ffffff33;
+        color: white;
+        border: 2px solid white;
+        &:hover{
+            color: #667eea;
+            background-color: white;
+            // border: 2px solid white;
+            transition: all .3s ease-in-out;
+        }
+    }
+    
+    .wave-svg {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
