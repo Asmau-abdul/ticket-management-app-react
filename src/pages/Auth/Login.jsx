@@ -10,8 +10,10 @@ const Login = () => {
     const currentUser = []
 
     const submitHandler = (e) => {
+        e.preventDefault()
+        console.log('hi there') 
+        return;
         try {
-            e.preventDefault()
             fetch('http://localhost:3000/users')
             .then((res) => {
                 if(!res.ok){
